@@ -8,18 +8,6 @@ public class AddTwoNumbers2 {
             listNode = listNode.next;
         }
     }
-
-
-    public static class ListNode {
-          int val;
-          ListNode next;
-          ListNode() {}
-          ListNode(int val) { this.val = val; }
-          ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
-
-
-
     static class Solution {
         //官方解法
         public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
@@ -59,5 +47,12 @@ public class AddTwoNumbers2 {
             ListNode root = new ListNode(num%10,next);
             return root;
         }
+    }
+    static class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 }
