@@ -1,4 +1,6 @@
-public class LongestSubstringWithoutRepeatingCharacters2 {
+package leetcode.algorithmProblems;
+
+public class LongestSubstringWithoutRepeatingCharacters3 {
     public static void main(String[] args) {
         StringBuffer stringBuffer = new StringBuffer("abcabcabc" );
         System.out.println(lengthOfLongestSubstring(stringBuffer.toString()));

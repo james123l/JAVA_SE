@@ -5,9 +5,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public interface BinarySearch {
-    //二分查找方法 需要传入的表是有序的 每次通过对比中间值 并与我们要查找的值匹配来获得下标
+    /**
+     *     二分查找方法 需要传入的表是有序的 每次通过对比中间值 并与我们要查找的值匹配来获得下标
+     */
+
 
     //递归实现
+    //错误
+    @Deprecated
     static int binarySearchRecursion(int[] arr,int key){
         if((arr.length==0||key < arr[0] || key > arr[arr.length-1])) return -1; //没有找到
         int temp = arr.length/2;
@@ -47,9 +52,8 @@ public interface BinarySearch {
         }
 
     }
-    //完成一个课后思考题:
     /*
-     * 课后思考题： {1,8, 10, 89, 1000, 1000，1234} 当一个有序数组中，
+     * 问题： {1,8, 10, 89, 1000, 1000，1234} 当一个有序数组中，
      * 有多个相同的数值时，如何将所有的数值都查找到，比如这里的 1000
      *
      * 思路分析

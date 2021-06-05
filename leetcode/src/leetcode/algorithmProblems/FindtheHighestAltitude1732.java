@@ -1,3 +1,5 @@
+package leetcode.algorithmProblems;
+
 public class FindtheHighestAltitude1732 {
     public int largestAltitude(int[] gain) {
         if(gain.length==1) return Math.max(gain[0],0 );

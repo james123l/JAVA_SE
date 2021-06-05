@@ -1,3 +1,5 @@
+package leetcode.algorithmProblems;
+
 import java.util.Arrays;
 
 public class RemoveDuplicatesfromSortedArray26 {

@@ -1,11 +1,11 @@
 package algorithm.sort;
 
 public interface SimpleSelectSort {
-    /*
-    选择排序的实现思想
-    一个数组 8 5 4 9 3 6
-    第一轮循环 先假设index = 0的数是最小的 依次和后面进行对比 如果当前的数index = x比index = 0小 则和这两个数字交换位置 ，第一轮对比结束后会把最小的数字转到第一个
-    第二轮从index = 1 的数开始继续对比
+    /**
+     * 选择排序的实现思想
+     *一个数组 8 5 4 9 3 6
+     *第一轮循环 先假设index = 0的数是最小的 依次和后面进行对比 如果当前的数index = x比index = 0小 则和这两个数字交换位置 ，第一轮对比结束后会把最小的数字转到第一个
+     *第二轮从index = 1 的数开始继续对比
      */
     //选择排序时间复杂度是 O(n^2)
     static boolean simpleSelectSort(int[] arr){

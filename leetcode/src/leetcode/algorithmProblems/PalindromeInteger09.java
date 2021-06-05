@@ -1,3 +1,5 @@
+package leetcode.algorithmProblems;
+
 public class PalindromeInteger09 {
     //string解法
     public boolean isPalindrome(int x) {

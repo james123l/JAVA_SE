@@ -1,4 +1,5 @@
-import java.lang.reflect.Array;
+package leetcode.algorithmProblems;
+
 import java.util.Arrays;
 
 public class LongestCommonPrefix14 {
