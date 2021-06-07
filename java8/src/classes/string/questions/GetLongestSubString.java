@@ -1,6 +1,6 @@
-package basic.string.questions;
+package classes.string.questions;
 
-public class Stringtest {
+public class GetLongestSubString {
     public static void main(String[] args)  {
         String str= "hello,world!";
         //System.out.println(Thisutil.secionalReverse(str, 1, 4));
@@ -9,8 +9,8 @@ public class Stringtest {
         //System.out.println(Thisutil.substringAppearTimes("ab", str2));
 
         String str3= "abckac";
-        System.out.println(Thisutil.getLongestSubstringMethod1(str2,str3));
-        for (String stringiterator :Thisutil.getLongestSubstringMethod2(str2,str3)) {
+        System.out.println(StringUtil.getLongestSubstringMethod1(str2,str3));
+        for (String stringiterator : StringUtil.getLongestSubstringMethod2(str2,str3)) {
             System.out.println(stringiterator);
         }
 
@@ -18,7 +18,14 @@ public class Stringtest {
 
     }
 }
-class Thisutil{
+class StringUtil {
+    /**
+     * 区间反转 计算子串出现次数 公共最长子串
+     * @param str
+     * @param firstIndex
+     * @param lastIndex
+     * @return
+     */
     //区间reverse
     public static String secionalReverse(String str,int firstIndex,int lastIndex){
         if(firstIndex>=lastIndex||lastIndex>str.length()) try {
@@ -63,7 +70,7 @@ class Thisutil{
         }
         return count;
     }
-    //计算最长子串01
+    //计算最长公共子串01
     /*算法：
     把两个字符串分别设置为第一行和第一列制作表格
     0   a   b   c
@@ -74,6 +81,12 @@ class Thisutil{
     对角线连续的最大的数字就对应了最长子串
      */
 
+    /**
+     * return string
+     * @param str1
+     * @param str2
+     * @return
+     */
     public static String getLongestSubstringMethod1(String str1, String str2){
         //str1作为矩阵的第一列 str2作为第一行
         int[][] matrix = new int[str1.length()+2][str2.length()+2];
@@ -101,6 +114,13 @@ class Thisutil{
     //计算最长子串02
     /*
     算法：例如短串长度为6 则先检测长度为6的子串是否存在 再检测5 一直到1
+     */
+
+    /**
+     * return string[]
+     * @param str1
+     * @param str2
+     * @return
      */
      public static String[] getLongestSubstringMethod2(String str1, String str2){
          //设置承载最长字串的stringbuffer

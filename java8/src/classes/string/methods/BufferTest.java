@@ -1,4 +1,4 @@
-package basic.string.methods;
+package classes.string.methods;
 
 public class BufferTest {
     public static void main(String[] args) {
