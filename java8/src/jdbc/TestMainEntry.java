@@ -1,11 +1,19 @@
 package jdbc;
 
-import java.io.File;
+import jdbc.DAO.regularDAO.Customer;
+import jdbc.preparedStatement.BlobOperation;
+import jdbc.preparedStatement.GeneralQueryPreparedSatement;
+import jdbc.preparedStatement.PreparedStatementUpdateDeleteInsert;
+import jdbc.preparedStatement.SpecificTableQuery;
+import jdbc.transaction.TransactionOperation;
+import jdbc.util.ConnectionUtil;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
 public class TestMainEntry {
     public static void main(String[] args) {
+        testConnection();
     }
     public static void testTransaction(){
         //事务测试
@@ -28,5 +36,12 @@ public class TestMainEntry {
         //测试适合所有表的通用查询
         ArrayList<Customer> customers = GeneralQueryPreparedSatement.GeneralQueryPreparedSatement(Customer.class, "select* from customers where id>?", 0);
         customers.forEach(System.out::println);
+    }
+    public static void testConnection(){
+        try {
+            ConnectionUtil.getConnection();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

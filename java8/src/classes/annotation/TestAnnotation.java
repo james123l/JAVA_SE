@@ -1,5 +1,6 @@
+package classes.annotation;
+
 import java.lang.annotation.Annotation;
-import java.lang.annotation.Target;
 import java.util.ArrayList;
 
 public class TestAnnotation {
@@ -22,6 +23,8 @@ public class TestAnnotation {
 //@MyAnnotations({@MyAnnotation ,@MyAnnotation  })
 @MyAnnotation("abc")
 @MyAnnotation("def")
+/*@MyAnnotations({@MyAnnotation("abc"),@MyAnnotation("def")}) jdk7
+* */
 class Person<@MyAnnotation("abc") T >{
     // @MyAnnotation("abc") T  使用了ElementType.TYPE_PARAMETER
     public void show( ) throws @MyAnnotation RuntimeException{

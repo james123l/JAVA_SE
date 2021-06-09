@@ -25,7 +25,7 @@ enum Season{
     //可选择的选项需要先写出来,逗号间隔
     //默认为public static final 修饰
     spring ("spring"),
-    Summer ("summer"),
+    summer ("summer"),
     fall ("fall"),
     winter("winter");
 

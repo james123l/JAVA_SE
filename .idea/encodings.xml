@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/avl/AVLTreeDemo.java" charset="GBK" />
     <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/binarysorttree/BinarySortTreeDemo.java" charset="GBK" />
+    <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/graph/Graph.java" charset="GBK" />
     <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/hashtab/HashTabDemo.java" charset="GBK" />
+    <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/huffmancode/HuffmanCode.java" charset="GBK" />
+    <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/huffmantree/HuffmanTree.java" charset="GBK" />
     <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/search/BinarySearch.java" charset="GBK" />
     <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/search/FibonacciSearch.java" charset="GBK" />
     <file url="file://H:/笔记/Data Structure and Algorithm/尚硅谷韩顺平数据结构/DataStructures/src/com/atguigu/search/InsertValueSearch.java" charset="GBK" />

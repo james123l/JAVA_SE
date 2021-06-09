@@ -1,4 +1,4 @@
-import jdk.swing.interop.SwingInterOpUtils;
+package  classes.string.project;
 
 public class Validate {
     // 第33～126号(共94个)是字符，其中第48～57号为0～9十个阿拉伯数字；65～90号为26个大写英文字母，97～122号为26个小写英文字母，其余为一些标点符号、运算符号等。

@@ -39,5 +39,10 @@ public class Test {
         int result = num1 / num2 ;
         System.out.println(result);
     }
+    //也可以throw new exception
+    public static void throwException(){
+        //抛出自定义异常 也可以抛出rt exception
+        throw new DefineException("抛出异常");
+    }
 
 }
