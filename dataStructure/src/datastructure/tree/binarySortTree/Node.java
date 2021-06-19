@@ -101,4 +101,9 @@ public class Node {
         }
     }
 
+    public int getMaxDepth(){
+
+        return 0;
+    }
+
 }

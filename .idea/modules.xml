@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/Test/Test.iml" filepath="$PROJECT_DIR$/Test/Test.iml" />
       <module fileurl="file://$PROJECT_DIR$/dataStructure/dataStructure.iml" filepath="$PROJECT_DIR$/dataStructure/dataStructure.iml" />
       <module fileurl="file://$PROJECT_DIR$/designPattern/designPattern.iml" filepath="$PROJECT_DIR$/designPattern/designPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java8/java8.iml" filepath="$PROJECT_DIR$/java8/java8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaSE/javaSE.iml" filepath="$PROJECT_DIR$/javaSE/javaSE.iml" />
       <module fileurl="file://$PROJECT_DIR$/leetcode/leetcode.iml" filepath="$PROJECT_DIR$/leetcode/leetcode.iml" />
     </modules>
   </component>

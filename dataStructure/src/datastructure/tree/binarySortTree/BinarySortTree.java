@@ -130,5 +130,10 @@ public class BinarySortTree {
             System.out.println("empty tree");
         }
     }
+    public int getMaxDepth(){
+        if(root == null) return 0 ;
+        if(root.left==null&&root.right == null) return 1;
+        return root.getMaxDepth();
+    }
 }
 

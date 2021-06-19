@@ -1,6 +1,8 @@
 package datastructure.tree.binaryTree;
 
 
+import datastructure.tree.binaryTree.nodes.Node;
+
 import java.util.ArrayList;
 
 //定义BinaryTree 二叉树

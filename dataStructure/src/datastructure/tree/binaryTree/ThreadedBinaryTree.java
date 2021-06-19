@@ -1,5 +1,7 @@
 package datastructure.tree.binaryTree;
 
+import datastructure.tree.binaryTree.nodes.ThreadedNode;
+
 /*线索化： 因为二叉树遍历需要递归，消耗大。所以采用链表的思想把所有节点串联成一个线性结构，打印的时候可以直接顺序打印，但是线索化二叉树就无法通过递归进行遍历和删除了
 根据一种遍历模式 例如中序遍历 根据打印出的顺序[1,2,3,4,5,6]，使用当前树的空节点进行从头到尾的串联 ，如同链表一样
 2是3的前驱节点 2是1的后继节点

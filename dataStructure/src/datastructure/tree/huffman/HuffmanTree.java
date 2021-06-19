@@ -73,7 +73,7 @@ public class HuffmanTree {
         return nodes.get(0);
 
     }
-    private static class Node extends datastructure.tree.binaryTree.Node implements Comparable{
+    private static class Node extends datastructure.tree.binaryTree.nodes.Node implements Comparable{
         public int getVal() {
             return val;
         }

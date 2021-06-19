@@ -1,6 +1,9 @@
 package datastructure.tree.binaryTree;
 
-public class ThreadedNodePostOrder extends ThreadedNode{
+import datastructure.tree.binaryTree.nodes.Node;
+import datastructure.tree.binaryTree.nodes.ThreadedNode;
+
+public class ThreadedNodePostOrder extends ThreadedNode {
     private Node parent;
 
     public ThreadedNodePostOrder(Object obj, Node parent) {
