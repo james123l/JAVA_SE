@@ -1,6 +1,5 @@
 package leetcode.solving;
 
-import java.io.PrintStream;
 
 public class N43MultiplyStrings {
     public static void main(String[] args) {

@@ -54,6 +54,14 @@ import java.util.Set;
  *
  */
 public class ChannelDemo {
+    public static void main(String[] args) {
+        ChannelDemo demo = new ChannelDemo();
+        try {
+            demo.EncodeDecode();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
     //字符集
     public void EncodeDecode() throws IOException {
         Charset cs1 = Charset.forName("GBK");
@@ -71,7 +79,7 @@ public class ChannelDemo {
         //编码
         ByteBuffer bBuf = ce.encode(cBuf);
 
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < 7; i++) {
             System.out.println(bBuf.get());
         }
 
