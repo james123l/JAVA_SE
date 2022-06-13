@@ -17,7 +17,7 @@ public interface RedixSort {
     //对外接口
     static void radixSort(int[] arr){
         //获取一个index [0,index) 为负数 [index，arr.length]是正数
-        int zeroIndex = fingPivot(arr, 0, arr.length-1);
+        int zeroIndex = findPivot(arr, 0, arr.length-1);
         if(arr[zeroIndex]>=0){  //这个index对应是正数
             System.out.println("dayu0");
             //负数组
@@ -34,7 +34,7 @@ public interface RedixSort {
         }
     }
     //此函数的目的是寻找到一个下标 下标左是负数 右是正数
-    static int fingPivot(int[] arr, int left, int right){
+    static int findPivot(int[] arr, int left, int right){
         int tempLeft = left; //左下标
         int tempRight = right-1; //右下标
         int temp ; //临时变量，作为交换时使用
@@ -82,6 +82,8 @@ public interface RedixSort {
 //        Sort.show(arr);
         return pivot;
     }
+
+
     //基数排序方法 排序全正数或者全负数的
     static void radixSortAlgorithm(int[] arr) {
         //1. 得到数组中最大的数的位数

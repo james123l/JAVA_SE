@@ -39,6 +39,7 @@ public interface QuickSort {
 
             //如果交换到中轴 则不继续更新 把每次更新的量切换回中轴
             if(arr[tempLeft] == pivot) {
+                //tempRight--的原因：tempLeft已经指向了中轴值之后原来中轴的指针是tempRight
                 tempRight -= 1;
             }
             if(arr[tempRight] == pivot) {
@@ -48,8 +49,8 @@ public interface QuickSort {
         // 如果 tempLeft == tempRight, 必须tempLeft++, tempRight--, 否则为出现栈溢出
         // 此时中轴的定位已经确定 需要错开中轴 因为两个指针不能跨越中轴 如果相等 那么他们就一定等于中轴下标
         if (tempLeft == tempRight) {
-            tempLeft += 1; //中轴右边数组
-            tempRight -= 1;//中轴左边数组
+            tempLeft += 1;
+            tempRight -= 1;
         }
         //向左递归
         if(left < tempRight) {

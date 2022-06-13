@@ -1,4 +1,4 @@
-package leetcode.array;
+package dynamicprogramming.kmp;
 
 public class N28ImplementstrStr {
     //题目要求： 返回字符串在母串第一次出现的索引

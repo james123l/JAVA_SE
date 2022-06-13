@@ -3,15 +3,16 @@ package algorithm.sort;
 public class Sort {
     public static void main(String[] args) {
         int[] arr = new int[]{-1,1,3,4,5,9,7,65,12,45,36,95,22,2};
+        int[] arr1 = new int[]{-4,0,7,4,9,-5,-1,0,-7,-1};
         //quicksort可以处理负数
-//        QuickSort.quickSortRecursion(arr);
-//        show(arr);
+        QuickSort.quickSortRecursion(arr1);
+        show(arr1);
         //不能有负数
 //        arr[0] = 6;
 //        RedixSort.radixSortAlgorithm(arr);
 //        show(arr);
-        RedixSort.radixSort(arr);
-        show(arr);
+//        RedixSort.radixSort(arr);
+//        show(arr);
 
 
     }
